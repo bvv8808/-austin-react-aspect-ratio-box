@@ -1,5 +1,6 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Aspect from "./lib/AspectRatioBox";
 
 function App() {
   return (
@@ -17,6 +18,14 @@ function App() {
         >
           Learn React
         </a>
+        <div className="hello">
+          <Aspect
+            onClick={() => console.log("HI!")}
+            style={{ backgroundColor: "blue" }}
+          >
+            <div className="testDiv"></div>
+          </Aspect>
+        </div>
       </header>
     </div>
   );
