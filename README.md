@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# @hyeonwoo/react-aspect-ratio-box
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> 본 README 파일에서는 한국어와 영어 두 가지로 모두 설명합니다.
+> (English) This README file give you either Korean and English description. If you can't read Korean, plz scroll down to English section.
 
-## Available Scripts
+## 원하는 비율의 박스를 제공하는 컴포넌트입니다.
 
-In the project directory, you can run:
+### 설치
 
-### `npm start`
+```shell
+npm i @hyeonwoo/react-aspect-ratio-box
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 사용 방법 및 유의 사항
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- ratio라는 props에 원하는 비율을 아래 예시 코드와 같은 형식의 문자열로 넣어주세요. 형식이 잘못되거나 prop를 넣지 않을 경우, 에러 메시지가 콘솔에 표시되며 자동으로 1:1 비율이 됩니다.
 
-### `npm test`
+```javascript
+<AspectRatioBox ratio="16:9">...</AspectRatioBox>
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- div 태그에 넣을 수 있는 모든 props를 그대로 적용할 수 있습니다. (onClick, style, className 등)
 
-### `npm run build`
+- 기본적으로 부모 노드의 100% width를 가지며, 계산된 비율의 height 값은 해당 컴포넌트에 인라인 스타일로 적용되어 다른 스타일에 영향을 받지 않습니다.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+_감사합니다._
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<hr />
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## It is the component give you a box have the ratio you want.
 
-### `npm run eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```shell
+npm i @hyeonwoo/react-aspect-ratio-box
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Usage and Precaution
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Enter the ratio you want to 'ratio' props as the following code, or else there is a console.warn() and the ratio will become 1:1 automatically.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```javascript
+<AspectRatioBox ratio="16:9">...</AspectRatioBox>
+```
 
-## Learn More
+- You can enter the whole props that can be in `<div>` tag. (onClick, style, className, etc.)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- This have the width 100% of the parentNode. Calculated height is inserted in 'inline-style' so it'll be not affected another height value.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+_Thank you_

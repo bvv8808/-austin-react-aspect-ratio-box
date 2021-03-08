@@ -1,13 +1,20 @@
 {
-  "name": "@austin/react-aspect-ratio-box",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@hyeonwoo/react-aspect-ratio-box",
+  "version": "1.0.0",
   "module": "dist/AspectRatioBox.js",
   "main": "dist/AspectRatioBox.js",
   "autor": {
     "name": "hyeonwoo",
     "email": "hyeonwoo.v24@gmail.com"
   },
+  "keywords": [
+    "react",
+    "react component",
+    "react aspect",
+    "aspect ratio",
+    "react aspect ratio",
+    "aspect ratio component"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/bvv8808/react-aspect-ratio-box"
@@ -19,10 +26,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "babel src/lib -d dist --copy-files",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "publish:npm": "rm -rf dist && mkdir dist && babel src/lib -d dist --copy-files"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -43,7 +49,8 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.13.0",
-    "@babel/preset-react": "^7.12.13"
+    "@babel/preset-react": "^7.12.13",
+    "web-vitals": "^1.1.0"
   },
   "babel": {
     "presets": [

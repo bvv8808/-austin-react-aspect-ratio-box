@@ -20,6 +20,7 @@ function App() {
         </a>
         <div className="hello">
           <Aspect
+            ratio="2:1"
             onClick={() => console.log("HI!")}
             style={{ backgroundColor: "blue" }}
           >
