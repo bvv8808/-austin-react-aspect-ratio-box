@@ -1,12 +1,13 @@
 {
   "name": "@hyeonwoo/react-aspect-ratio-box",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "module": "dist/AspectRatioBox.js",
   "main": "dist/AspectRatioBox.js",
   "autor": {
     "name": "hyeonwoo",
     "email": "hyeonwoo.v24@gmail.com"
   },
+  "license": "MIT",
   "keywords": [
     "react",
     "react component",
